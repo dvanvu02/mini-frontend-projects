@@ -30,6 +30,6 @@ _E-commerce Product Card_
 ## 📖 Learning Outcomes
 - Practiced **responsive design** with CSS Flexbox/Grid.  
 - Improved understanding of **component-based UI design**.  
-- Strengthened **frontend fundamentals** (HTML, CSS, JS).  
+- Strengthened **frontend fundamentals** (HTML, CSS).  
 
-#### dvanvu02
+#### @dvanvu02
