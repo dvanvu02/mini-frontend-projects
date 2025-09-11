@@ -16,16 +16,16 @@ Each project focuses on practicing **UI design, responsive layout, and component
 
 ## ✅ Screenshots
 _Profile Card_  
-![Profile Card Screenshot](https://github.com/dvanvu02/mini-frontend-projects/blob/main/images/Profile%20Card.png)
+![Profile Card Screenshot](https://github.com/dvanvu02/mini-frontend-projects/blob/main/demo-images/Profile%20Card.png)
 
 _Pricing Card_  
-![Pricing Card Screenshot](https://github.com/dvanvu02/mini-frontend-projects/blob/main/images/Pricing%20Card.png)
+![Pricing Card Screenshot](https://github.com/dvanvu02/mini-frontend-projects/blob/main/demo-images/Pricing%20Card.png)
 
 _Login Form_
-![Login Card Screenshot](https://github.com/dvanvu02/mini-frontend-projects/blob/main/images/Login%20Form.png)
+![Login Card Screenshot](https://github.com/dvanvu02/mini-frontend-projects/blob/main/demo-images/Login%20Form.png)
 
 _E-commerce Product Card_
-![E-commerce Product Screenshot](https://github.com/dvanvu02/mini-frontend-projects/blob/main/images/Ecommerce%20Card.png)
+![E-commerce Product Screenshot](https://github.com/dvanvu02/mini-frontend-projects/blob/main/demo-images/Ecommerce%20Card.png)
 
 ## 📖 Learning Outcomes
 - Practiced **responsive design** with CSS Flexbox/Grid.  
