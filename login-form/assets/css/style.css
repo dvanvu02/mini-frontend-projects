@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    place-items: center;
+    background-color: #f2f2f2;
+}
+
+::selection {
+    background: #4158d0;
+    color: #000;
+}
+
+.wrapper {
+    width: 380px;
+
+    border-radius: 15px;
+
+    background-color: #fff;
+    box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .title {
+    line-height: 100px;
+    border-radius: 15px 15px 0 0;
+
+    color: #fff;
+    background: linear-gradient(-135deg, #FED9B7, #F07167);
+
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    /* thuộc tính user-select không cho user bôi đen text, etc. */
+    user-select: none;
+}
+
+.wrapper form {
+    padding: 10px 30px 50px 30px;
+}
+
+.wrapper form .field {
+    position: relative;
+
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.wrapper form .field input {
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    outline: none;
+
+    font-size: 17px;
+
+    transition: all 0.3s ease;
+}
+
+.wrapper form .field label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+
+    color: #999999;
+
+    font-weight: 400;
+    font-size: 17px;
+
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+/*
+Cú pháp input:focus~label và input:valid~label trong CSS 
+là các selector kết hợp trạng thái (pseudo-class) và kết hợp tổng quát (general sibling combinator).
+
+    +) :focus: là pseudo-class – đại diện cho trạng thái 
+    khi input đang được chọn (người dùng đang gõ vào).
+
+    +) :valid: pseudo-class đại diện cho trạng thái 
+    khi nội dung input hợp lệ (ví dụ: không bị thiếu, đúng định dạng email, v.v.).
+
+    +) ~label: là combinator (~), có nghĩa là chọn các thẻ <label> là anh em (sibling) 
+    phía sau của thẻ <input> cùng cha, không cần liền kề.
+*/
+form .field input:focus~label,
+form .field input:valid~label {
+    top: 0%;
+
+    padding: 5px;
+
+    color: #F07167;
+    background: #fff;
+
+    font-size: 16px;
+
+    /* transform: translateY(-50%); */
+}
+
+form .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 50px;
+    width: 100%;
+
+    font-size: 16px;
+}
+
+form .content .checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form .content input {
+    width: 15px;
+    height: 15px;
+
+    background: red;
+}
+
+form .content label {
+    padding-left: 5px;
+
+    color: #262626;
+    
+    user-select: none;
+}
+
+form .content .pass-link {
+    color: "";
+}
+
+/* 
+Chọn thẻ <input> có type="submit", nằm bên trong phần tử có class field, 
+và field này lại nằm bên trong một thẻ form. 
+*/
+form .field input[type="submit"] {
+    padding-left: 0;
+    margin-top: -10px;
+    border: none;
+
+    color: #fff;
+    background: linear-gradient(-135deg, #FED9B7, #F07167);
+
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+/* Làm cho nít Login có cảm giác bấm :)) */
+form .field input[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+form .signup-link {
+    color: #262626;
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .pass-link a,
+form .signup-link a {
+    color: #F07167;
+    text-decoration: none;
+}
+
+form .pass-link a:hover,
+form .signup-link a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    width: 100%;
+
+    background-color: #fff6f6;
+}
+
+.container {
+    position: relative;
+
+    width: 460px;
+    padding: 40px;
+    border-radius: 12px;
+
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+.container .title {
+    color: #333;
+
+    font-size: 2rem;
+}
+
+.container .price {
+    padding: 15px 0px;
+
+    color: #FF6B6B;
+
+    font-size: 2.2rem;
+    /* font-weight: 700;/ */
+}
+.container span {
+    font-size: 1.2rem;
+}
+
+.container .description {
+    margin: 20px 0px;
+
+    color: #3B3B3B;
+
+    font-size: 1.1rem;
+}
+
+.container .offer {
+    display: block;
+
+    margin-top: 25px;
+
+    color: #555555;
+
+    font-size: 1rem;
+}
+
+.container .subcribe-button {
+    display: inline-block;
+    
+    width: 100%;
+    padding: 15px 0px;
+    border-radius: 30px;
+    margin: 40px 0px 0px;
+
+    color: #ffffff;
+    background-color: #FF6B6B;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+.subcribe-button:hover {
+    background: #ff4d4d;
+}
+
+.container .ribbon-wrap {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+
+    width: 150px;
+    height: 150px;
+
+    pointer-events: none;
+}
+.ribbon-wrap .ribbon {
+    position: absolute;
+    top: 29%;
+    right: -17px;
+
+    width: 230px;
+    padding: 8px 0px;
+
+    color: #ffffff;
+    background-color: #FF6B6B;
+
+    font-size: 0.918rem;
+    text-align: center;
+
+    transform: rotate(-45deg);
+}
+
